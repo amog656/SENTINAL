@@ -1,4 +1,3 @@
-# DETECTIVE
 # AI-Powered Incident Investigation Platform
 
 An intelligent investigation system designed to uncover the truth hidden across fragmented operational knowledge.
