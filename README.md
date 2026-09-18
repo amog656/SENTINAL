@@ -1,4 +1,5 @@
-# AI-Powered Incident Investigation Platform
+# SENTINAL
+
 
 An intelligent investigation system designed to uncover the truth hidden across fragmented operational knowledge.
 
