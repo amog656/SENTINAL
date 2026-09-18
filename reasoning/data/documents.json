@@ -1,0 +1,25 @@
+[
+  {
+    "document_id": "INC-1042", "document_type": "incident_report", "title": "Orders API latency spike", "date": "2026-09-16", "timestamp": "2026-09-16T09:30:00Z", "service": "orders-api", "version": "v2.8.1", "authority_type": "postmortem", "supersedes": null,
+    "claims": ["Orders API p95 latency increased on September 16.", "The service was running v2.8.1 during the incident."],
+    "content": "Incident INC-1042 records a latency spike affecting orders-api. The root cause was not confirmed at incident time."
+  },
+  {
+    "document_id": "DEP-882", "document_type": "deployment_note", "title": "Orders API v2.8.1 deployment", "date": "2026-09-15", "timestamp": "2026-09-15T18:10:00Z", "service": "orders-api", "version": "v2.8.1", "authority_type": "deployment_review", "supersedes": null,
+    "claims": ["orders-api v2.8.1 was deployed at 18:10 UTC on September 15."],
+    "content": "Deployment DEP-882 completed for orders-api version v2.8.1. No causal link to a later incident is asserted."
+  },
+  {
+    "document_id": "PM-211", "document_type": "postmortem", "title": "May Orders API latency incident", "date": "2026-05-03", "timestamp": null, "service": "orders-api", "version": "v2.4.0", "authority_type": "postmortem", "supersedes": null,
+    "claims": ["A prior orders-api latency incident was caused by database connection saturation during a schema migration."],
+    "content": "Postmortem PM-211 describes historical latency in orders-api caused by database connection saturation during a schema migration."
+  },
+  {
+    "document_id": "GUIDE-12", "document_type": "troubleshooting_guide", "title": "Latency response guide", "date": "2024-02-01", "timestamp": null, "service": "service-a", "version": "v1", "authority_type": "troubleshooting", "supersedes": null,
+    "claims": ["Restart the service when latency remains high."], "content": "Old troubleshooting guidance for persistent latency."
+  },
+  {
+    "document_id": "GUIDE-41", "document_type": "troubleshooting_guide", "title": "Dependency failure response", "date": "2026-08-10", "timestamp": null, "service": "service-a", "version": "v3", "authority_type": "troubleshooting", "supersedes": "GUIDE-12",
+    "claims": ["Do not restart Service A during dependency failures; check dependency health first."], "content": "Updated troubleshooting guidance for dependency failures."
+  }
+]
