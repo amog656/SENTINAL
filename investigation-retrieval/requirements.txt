@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+sqlalchemy
+psycopg2-binary
+qdrant-client
+python-multipart
+pytest
+pytest-asyncio
+httpx
+pymupdf
+python-docx
+sentence-transformers
+rank-bm25
+openai

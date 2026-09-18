@@ -1,0 +1,15 @@
+Incident Report: INC-1042
+
+Summary
+orders-api became slow after deployment DEP-882 on 2026-09-14.
+
+Timeline
+10:05 DEP-882 deployed version v2.8.1 to orders-api.
+10:20 orders-api request latency increased.
+10:25 Investigation found PostgreSQL connection pool exhaustion.
+
+Root Cause
+Requests waited for available database connections because the PostgreSQL connection pool was exhausted.
+
+Resolution
+The connection pool limit was increased and orders-api latency returned to normal.
